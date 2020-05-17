@@ -22,7 +22,6 @@ export default function useCardSearch(query, page) {
       cancelToken: new axios.CancelToken((c) => (cancel = c)),
     })
       .then((response) => {
-        console.log(response.data._totalCount)
         setCards((prevCards) => {
           return [...prevCards, ...response.data.cards]
         })

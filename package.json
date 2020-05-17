@@ -1,12 +1,16 @@
 {
   "name": "my-candidate-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "infinite scroll project for highspot code sample with elderscrollslegend api",
   "main": "index.jsx",
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "start": "webpack-dev-server --open --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minmaxdata/my-candidate-code"
   },
   "keywords": [],
   "author": "Karen McAdams",
