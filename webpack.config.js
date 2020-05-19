@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Candidate: Karen McAdams',
+      title: 'Coding Assignment using Elder Scrolls Cards Api',
       template: './assets/index.html',
       favicon: './assets/favicon.ico',
     }),

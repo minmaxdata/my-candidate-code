@@ -9,10 +9,10 @@ const Card = ({ card, cb }) => {
       <img alt={name} src={imageUrl} className="card__artwork" />
 
       <div className="card__details">
-        <h2>{name}</h2>
-        <p className="card__desc">{text}</p>
-        <p className="card__set">SET: {set.name}</p>
-        <p className="card__type">TYPE: {type}</p>
+        <h2 className="yellow__color">{name}</h2>
+        <p>{text}</p>
+        <p>Set Name: {set.name}</p>
+        <p>Type: {type}</p>
       </div>
     </div>
   )
@@ -44,7 +44,12 @@ export default function App() {
   useCardSearch(query, page)
   return (
     <>
-      <input type="text" value={query} onChange={handleSearch}></input>
+      <h1 class="yellow__color">Candidate: Karen McAdams</h1>
+      <div className="card">
+        <label className="yellow__color">Search By Name:</label>
+        <input type="text" value={query} onChange={handleSearch}></input>
+      </div>
+
       <div className="cards">
         {cards.map((card, index) => {
           return cards.length === index + 1 ? (
