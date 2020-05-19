@@ -44,7 +44,7 @@ export default function App() {
   useCardSearch(query, page)
   return (
     <>
-      <h1 class="yellow__color">Candidate: Karen McAdams</h1>
+      <h1 className="yellow__color">Candidate: Karen McAdams</h1>
       <div className="card">
         <label className="yellow__color">Search By Name:</label>
         <input type="text" value={query} onChange={handleSearch}></input>

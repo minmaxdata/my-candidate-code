@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-image: url(//cdn-eso.mmoui.com/images/style_esoui/layout/eso-bg3.jpg),
+  background-image: url('./eso-bg3.jpg'),
     linear-gradient(110deg, #464344, #cec9dc);
   background-size: 680px, auto;
   min-height: calc(100vh - 100px);
