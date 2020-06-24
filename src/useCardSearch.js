@@ -6,10 +6,22 @@ export default function useCardSearch(query, page) {
   const [error, setError] = useState(false)
   const [cards, setCards] = useState([])
   const [hasMore, setHasMore] = useState(false)
+  const [savedCards, setSavedCards] = useState([])
+  const db_name = 'mycards';
 
   useEffect(() => {
     setCards([])
   }, [query])
+
+  useEffect(()=> {
+    const local_db =  window.localStorage.getItem(db_name)
+    let cardids = []
+    if (local_db) {
+      cardids = JSON.parse(local_db)
+    }
+    const saved = cardids.map(id => cards.filter(card => card.id === id))
+    setSavedCards(saved)
+  },[cards])
 
   useEffect(() => {
     setError(false)
